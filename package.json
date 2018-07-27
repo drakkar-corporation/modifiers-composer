@@ -1,7 +1,7 @@
 {
   "name": "modifiers-composer",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
+    "prepublishOnly": "yarn build",
     "test": "jest"
   }
 }
