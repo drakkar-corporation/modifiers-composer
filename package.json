@@ -1,8 +1,11 @@
 {
   "name": "modifiers-composer",
+  "description": "A simple library to add BEM modifiers to your React components",
   "version": "1.0.0",
   "main": "dist/modifiers-composer.js",
   "license": "MIT",
+  "keywords": ["modifiers", "bem", "emotion.sh", "styled-components"],
+  "homepage": "https://github.com/drakkar-corporation/modifiers-composer",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.54",
