@@ -1,7 +1,7 @@
 {
   "name": "modifiers-composer",
   "version": "1.0.0",
-  "main": "dist/bundle.js",
+  "main": "dist/modifiers-composer.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
@@ -19,5 +19,12 @@
     "build": "webpack --mode production",
     "prepublishOnly": "yarn build",
     "test": "jest"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0-beta.56",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }

@@ -1,3 +1,5 @@
 import modifiersComposer from './src/modifiers-composer'
+import withModifiers from './src/with-modifiers'
 
-export default modifiersComposer;
+export { withModifiers }
+export default modifiersComposer

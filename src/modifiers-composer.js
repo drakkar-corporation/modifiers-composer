@@ -1,4 +1,4 @@
-const composeModifiers = modifiersConfig => props => {
+const modifiersComposer = modifiersConfig => props => {
   if (!props) {
     return
   }
@@ -26,4 +26,4 @@ const composeModifiers = modifiersConfig => props => {
   })
 }
 
-export default composeModifiers
+export default modifiersComposer

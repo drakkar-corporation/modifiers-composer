@@ -1,8 +1,10 @@
 module.exports = {
-  entry: './src/modifiers-composer.js',
+  entry: './index.js',
   output: {
-    path: __dirname +'/dist',
-    filename: 'bundle.js'
+    path: __dirname + '/dist',
+    filename: 'modifiers-composer.js',
+    library: 'modifiersComposer',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
