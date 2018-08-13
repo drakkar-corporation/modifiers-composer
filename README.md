@@ -14,21 +14,44 @@ yarn add modifiers-composer
 
 ## Usage
 
+### modifiers-composer
+
 ```
 import modifiersComposer from 'modifiers-composer'
 import styled from 'react-emotion'
 
 const modifiersComposed = modifiersComposer({
-    uppercase: () => `text-transform: uppercase`,
-    colorRed: () => `color: red`
+  uppercase: () => `text-transform: uppercase`,
+  colorRed: () => `color: red`
 })
 
 const Text = styled.div`
-    ${props => modifiersComposed(props)};
+  ${props => modifiersComposed(props)};
 `
 
-const Container = () =>
+const Container = () => (
   <Text modifiers={['uppercase', 'colorRed']}>
     Hello World!
-  </Text>
+  </Text>)
+```
+
+### withModifiers
+
+```
+import { withModifiers } from 'modifiers-composer'
+import styled from 'react-emotion'
+
+const modifiersConfig = {
+    uppercase: () => `text-transform: uppercase`,
+    colorRed: () => `color: red`
+}
+
+const Text = styled.div`
+  ${({ modifiers }) => modifiers};
+`
+
+const Element = withModifiers(modifiersConfig)(({ modifiers }) => (
+  <Text modifiers={['uppercase', 'colorRed']}>
+    Hello World!
+  </Text>))
 ```
