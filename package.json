@@ -1,7 +1,7 @@
 {
   "name": "modifiers-composer",
   "description": "A simple library to add BEM modifiers to your React components",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/modifiers-composer.js",
   "license": "MIT",
   "keywords": [
