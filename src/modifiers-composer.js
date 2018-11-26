@@ -15,7 +15,7 @@ const modifiersComposer = modifiersConfig => props => {
     throw new Error('Invalid modifiers provided. It should be an array')
   }
 
-  return modifiers.map(modifier => {
+  const modifierStrings = modifiers.map(modifier => {
     if (!modifier) {
       console.warn(
         `${modifier} modifier key doesn't exists in provided modifiers config`
@@ -24,6 +24,7 @@ const modifiersComposer = modifiersConfig => props => {
     }
     return modifiersConfig[modifier]({ theme })
   })
+  return modifierStrings.join('')
 }
 
 export default modifiersComposer

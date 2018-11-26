@@ -13,6 +13,5 @@ test('It should add modifiers property', () => {
     <div>Hello World !</div>
   ))
   const wrapper = shallow(<HelloWorld modifiers={['uppercase']} />)
-  console.log(wrapper.props(), 'wrapper props')
-  expect(wrapper.prop('modifiers')).toEqual(['text-transform: uppercase;'])
+  expect(wrapper.prop('modifiers')).toEqual('text-transform: uppercase;')
 })
