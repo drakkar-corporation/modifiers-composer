@@ -3595,6 +3595,17 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
+modifiers-composer@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/modifiers-composer/-/modifiers-composer-1.1.1.tgz#4fc944d4fe59d7f0d0a148558974c6e045753548"
+  integrity sha512-o/sEQJGyo0X+Idmk5Xzuqbqjpp21gK3EHpzbwA+LPUPhMfvkE2aZqgTPidzsiFh9YtONBLerElAFXCSoc14YFQ==
+  dependencies:
+    "@babel/preset-react" "^7.0.0-beta.56"
+    enzyme "^3.3.0"
+    enzyme-adapter-react-16 "^1.1.1"
+    react "^16.4.2"
+    react-dom "^16.4.2"
+
 moo@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
